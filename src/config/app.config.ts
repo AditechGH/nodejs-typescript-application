@@ -9,17 +9,17 @@ export default class Config {
   
     private static get devConfig(): any {
       return {
-        database: `mongodb://localhost:27017/hls-ffmpeg-dev`,  
-        secret: process.env.DEV_SECRET || 'S3CR3!',
-        HTTP_PORT: process.env.PORT || 4000,
+        database: `mongodb://localhost:27017/hello-world-dev`,  
+        secret: process.env.DEV_SECRET,
+        HTTP_PORT: process.env.PORT || 8080,
         HTTPS_PORT: process.env.PORT || 4343,
       };
     }
   
     private static get testConfig(): any {
       return {
-        database: `mongodb://localhost:27017/hls-ffmpeg-test`,
-        secret: process.env.TEST_SECRET || 'S3CR3!',
+        database: `mongodb://localhost:27017/hello-world-test`,
+        secret: process.env.TEST_SECRET,
         HTTP_PORT: process.env.PORT || 3000,
         HTTPS_PORT: process.env.PORT || 4343,
       };
@@ -27,10 +27,10 @@ export default class Config {
   
     private static get prodConfig(): any {
       return {
-        database: `mongodb://localhost:27017/hls-ffmpeg-prod`,
-        secret: process.env.SECRET || 'S3CR3!',
-        HTTP_PORT: process.env.PORT || 80,
-        HTTPS_PORT: process.env.PORT || 443,
+        database: `mongodb://localhost:27017/hello-world-prod`,
+        secret: process.env.SECRET,
+        HTTP_PORT: process.env.PORT || 8080,
+        HTTPS_PORT: process.env.PORT || 4343,
       };
     }
   

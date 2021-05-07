@@ -21,12 +21,12 @@ describe('helloWorld', () => {
 
   describe('GET /helloWorld', () => {
     it('prints hello world', async () => {
-      const response = await request(router).post(`${path}`);
+      const response = await request(router).get(`${path}`);
       expect(response.status).toBe(200);
     });
 
     it('fails with a non-existing api method', async () => {
-      const response = await request(router).post('/api/v11/transcode');
+      const response = await request(router).get('/api/v11/transcode');
       expect(response.status).toEqual(404);
     });
   });

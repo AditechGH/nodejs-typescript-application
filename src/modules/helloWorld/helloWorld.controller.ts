@@ -5,7 +5,7 @@ export class HelloWorldController {
    * helloWorld
    */
   public helloWorld(req: Request, res: Response) {
-    res.status(200).write('Hello World!');
+    res.json('Hello World!');
   }
 
 }

@@ -1,6 +1,6 @@
 # Building RESTful Web APIs with Node.js, Express and TypeScript
 
-This is an application that prints the text "Hello World!". 
+This is a simple "Hello World!" rest-api application. 
 
 # Prerequisites
 
@@ -48,10 +48,10 @@ npm run prod
 
 ## Testing over HTTP
 
-The default URL is: *http://localhost:4000*
+The default URL is: *http://localhost:8080*
 
 + Print Hello World
 
 ```
-Send GET request to http://localhost:4000/api/v1/helloWorld
+Send GET request to http://localhost:8080/api/v1/helloWorld
 ```
